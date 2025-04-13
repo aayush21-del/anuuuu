@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday Anu</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(to bottom right, #1e1e2f, #3a3a5f);
+      color: white;
+      text-align: center;
+      overflow-x: hidden;
+    }
+    .hero {
+      position: relative;
+      background: url('her-photo.jpg') center/cover no-repeat;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 2rem;
+      text-shadow: 2px 2px 8px #000;
+    }
+    h1 {
+      font-family: 'Pacifico', cursive;
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    .message {
+      margin: 2rem auto;
+      max-width: 700px;
+      line-height: 1.8;
+      font-size: 1.2rem;
+      animation: fadeIn 2s ease-in-out;
+    }
+    .reveal-btn {
+      margin-top: 2rem;
+      background: #ff6f91;
+      color: white;
+      padding: 1rem 2rem;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background 0.3s ease;
+    }
+    .reveal-btn:hover {
+      background: #ff4f71;
+    }
+    .hidden-message {
+      display: none;
+      margin-top: 1rem;
+      font-style: italic;
+      color: #ffc;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    footer {
+      margin-top: 3rem;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+    audio {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="hero">
+    <h1>Happy Birthday, Anu! 🎉</h1>
+    <p class="message">
+      From a random like on a reel to endless late-night conversations,<br>
+      it's crazy how beautifully strangers can turn into someone so special.<br>
+      Since 4th Oct 2024, you've been more than just a friend—<br>
+      someone who shares thoughts even before I say them,<br>
+      someone whose vibes match mine like magic, and someone who's been there!
+    </p>
+  </div>
+
+  <div class="message">
+    The way we think, the way we feel,<br>
+    So many moments felt unreal.<br>
+    Same thoughts, same time — it's strange, it's wild.
+  </div>
+
+  <div class="message">
+    HAPPY BIRTHDAY to the one who<br>
+    turned from a stranger into someone truly special.<br>
+    Even when I annoy you, you still mean so much to me.<br>
+    Thank you for being you — genuine, kind, and unforgettable.
+  </div>
+
+  <div class="message">
+    And if I ever said something that hurt you —<br>
+    especially those jokes on your skin tone and more...<br>
+    I'm truly sorry.<br>
+    You've always been special. Always. 💫
+  </div>
+
+  <button class="reveal-btn" onclick="document.getElementById('hidden').style.display='block'">
+    ✨ Click to reveal something special
+  </button>
+  <div id="hidden" class="hidden-message">
+    You’re unforgettable. Thank you for being in my life. – Vivek 💙
+  </div>
+
+  <audio autoplay loop>
+    <source src="https://docs.google.com/uc?export=open&id=1-dummy-night-changes-mp3" type="audio/mpeg">
+  </audio>
+
+  <footer>
+    <!-- Made with ❤️ and JavaScript by Vivek -->
+  </footer>
+</body>
+</html>
